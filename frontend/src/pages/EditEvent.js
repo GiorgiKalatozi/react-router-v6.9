@@ -1,3 +1,8 @@
+import { useRouteLoaderData } from "react-router-dom";
+import EventForm from "../components/EventForm";
+
 export default function EditEventPage() {
-  return <div>EditEventPage</div>;
+  const data = useRouteLoaderData("event-detail");
+
+  return <EventForm event={data.event} />;
 }
