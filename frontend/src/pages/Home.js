@@ -1,3 +1,5 @@
+import PageContent from "../components/PageContent";
+
 export default function HomePage() {
-  return <div>HomePage</div>;
+  return <PageContent title="Welcome">Glorious warrior</PageContent>;
 }
